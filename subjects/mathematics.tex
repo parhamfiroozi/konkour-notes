@@ -1,0 +1,53 @@
+% =========================
+% subjects/mathematics.tex  (APPEND in Engineering Mathematics as well)
+% =========================
+
+\subsection{Fourier Series: Period-Shift Integral Property}
+
+\begin{ThmBox}
+If $f$ is periodic with period $2p$ (i.e., $f(t+2p)=f(t)$), then for any $d\in\mathbb{R}$,
+\[
+\int_d^{d+2p} f(t)\,dt \;=\; \int_0^{2p} f(t)\,dt.
+\]
+\end{ThmBox}
+
+\begin{ExBox}
+Proof:
+Let $u=t-d$. Then
+\[
+\int_d^{d+2p} f(t)\,dt
+= \int_0^{2p} f(u+d)\,du.
+\]
+Set $g(u)=f(u+d)$. Since $f$ is $2p$-periodic, $g$ is also $2p$-periodic, hence
+\[
+\int_0^{2p} g(u)\,du=\int_0^{2p} f(u)\,du,
+\]
+so
+\[
+\int_d^{d+2p} f(t)\,dt = \int_0^{2p} f(u)\,du.
+\]
+\end{ExBox}
+
+\subsection{Integration by Parts}
+
+\begin{DefBox}
+\[
+\int u\,dv \;=\; uv - \int v\,du.
+\]
+\end{DefBox}
+
+\subsection{Exponential-Trigonometric Integrals}
+
+\begin{ThmBox}
+For $a,b\in\mathbb{R}$ with $a^2+b^2\neq 0$,
+\[
+\int e^{ax}\cos(bx)\,dx
+= \frac{e^{ax}}{a^2+b^2}\,\bigl(a\cos(bx)+b\sin(bx)\bigr) + C,
+\]
+\[
+\int e^{ax}\sin(bx)\,dx
+= \frac{e^{ax}}{a^2+b^2}\,\bigl(a\sin(bx)-b\cos(bx)\bigr) + C.
+\]
+\end{ThmBox}
+
+\newpage

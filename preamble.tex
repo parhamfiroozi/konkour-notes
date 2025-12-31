@@ -1,0 +1,29 @@
+\usepackage[a4paper,margin=1.8cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.05}
+\setlength{\parindent}{0pt}
+
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+
+\usepackage{amsmath,amssymb}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+% Boxes (structure only)
+\newtcolorbox{DefBox}{}
+\newtcolorbox{ThmBox}{}
+\newtcolorbox{ExBox}{}
+\newtcolorbox{WarnBox}{}
+\newtcolorbox{CheatBox}{}
+
+% Header/Footer (structure only)
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+
+% Section formatting (structure only)
+\titleformat{\section}{}{}{0pt}{}
+\titleformat{\subsection}{}{}{0pt}{}
